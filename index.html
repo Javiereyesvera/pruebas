@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marysol Córdoba Díaz — Portafolio Profesional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar Navigation -->
+    <header class="navbar">
+        <div class="logo">MARYSOL CÓRDOBA</div>
+        <nav class="nav-links">
+            <a href="#hero">INICIO</a>
+            <a href="#projects">PROYECTOS</a>
+            <a href="#experience">EXPERIENCIA</a>
+            <a href="#education">FORMACIÓN</a>
+        </nav>
+        <a href="#contact" class="btn-contact">CONTACTAR</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="parallax-bg" id="parallaxBg">DIGITAL DESIGNER</div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Diseñadora<br><span class="outline-text">Gráfica</span></h1>
+                
+                <div class="filter-pills">
+                    <button class="pill-btn active" data-filter="all">
+                        <span class="dot"></span> TODOS
+                    </button>
+                    <button class="pill-btn" data-filter="digital">
+                        <span class="dot"></span> DIGITAL
+                    </button>
+                    <button class="pill-btn" data-filter="print">
+                        <span class="dot"></span> IMPRESO
+                    </button>
+                    <button class="pill-btn" data-filter="uxui">
+                        <span class="dot"></span> UX/UI
+                    </button>
+                    <button class="pill-btn" data-filter="branding">
+                        <span class="dot"></span> BRANDING
+                    </button>
+                </div>
+
+                <p class="hero-bio">
+                    Diseñadora gráfica creativa y proactiva con más de 5 años de experiencia. Especializada en branding corporativo, diseño instruccional/editorial, interfaces UX/UI y comunicación visual para instituciones y marcas.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">VER TRABAJOS</a>
+                    <a href="#contact" class="btn-secondary">VER REFERENCIAS</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="image-frame">
+                    <img src="marysol.jpeg" alt="Marysol Córdoba Díaz" class="profile-img">
+                </div>
+                <div class="frame-tag">MARYSOL CÓRDOBA DÍAZ — 2026</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <span class="section-subtitle">PORTAFOLIO SELECCIONADO</span>
+            <h2 class="section-title">PROYECTOS DESTACADOS</h2>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+            <!-- Project 1 -->
+            <article class="project-card" data-category="digital branding" onclick="openModal('jana')">
+                <div class="project-image-box">
+                    <div class="placeholder-art jana-art">PRODUCTOS JANA</div>
+                    <span class="category-badge">BRANDING / DIGITAL</span>
+                </div>
+                <div class="project-info">
+                    <h3>Productos Jana</h3>
+                    <p>Diagramación, arte finalización y gestión de canales digitales de marca corporativa.</p>
+                    <span class="link-more">Explorar Proyecto &rarr;</span>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" data-category="print digital" onclick="openModal('simposio')">
+                <div class="project-image-box">
+                    <div class="placeholder-art simposio-art">3ER SIMPOSIO UV</div>
+                    <span class="category-badge">IMPRESO / WEB</span>
+                </div>
+                <div class="project-info">
+                    <h3>III Simposio Interlingüístico</h3>
+                    <p>Identidad trilingüe, piezas web, afiches y editorial para Universidad del Valle.</p>
+                    <span class="link-more">Explorar Proyecto &rarr;</span>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" data-category="branding print" onclick="openModal('posgrados')">
+                <div class="project-image-box">
+                    <div class="placeholder-art posgrados-art">POSGRADOS ECL</div>
+                    <span class="category-badge">BRANDING / EDITORIAL</span>
+                </div>
+                <div class="project-info">
+                    <h3>Posgrados Ciencias del Lenguaje</h3>
+                    <p>Manual de identidad visual, cromatismo distintivo y piezas promocionales para maestrías.</p>
+                    <span class="link-more">Explorar Proyecto &rarr;</span>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card" data-category="uxui digital" onclick="openModal('psicologicamente')">
+                <div class="project-image-box">
+                    <div class="placeholder-art psico-art">PSICOLÓGICAMENTE</div>
+                    <span class="category-badge">UX/UI / WEB</span>
+                </div>
+                <div class="project-info">
+                    <h3>Psicológicamente</h3>
+                    <p>Diseño de arquitectura visual, interfaz de usuario (UI) e implementación web.</p>
+                    <span class="link-more">Explorar Proyecto &rarr;</span>
+                </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card" data-category="uxui digital" onclick="openModal('camaleon')">
+                <div class="project-image-box">
+                    <div class="placeholder-art camaleon-art">INTERFAZ TANGIBLE</div>
+                    <span class="category-badge">UX / INVESTIGACIÓN</span>
+                </div>
+                <div class="project-info">
+                    <h3>Investigación Camaleón (UV)</h3>
+                    <p>Diseño de interfaz tangible e inclusiva para personas videntes y no videntes.</p>
+                    <span class="link-more">Explorar Proyecto &rarr;</span>
+                </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card" data-category="print digital" onclick="openModal('bibliotec')">
+                <div class="project-image-box">
+                    <div class="placeholder-art bibliotec-art">FUNDACIÓN BIBLIOTEC</div>
+                    <span class="category-badge">EDITORIAL / DIGITAL</span>
+                </div>
+                <div class="project-info">
+                    <h3>Fundación BiblioTEC</h3>
+                    <p>Arte finalización corporativa, piezas comunitarias y gestión web institucional.</p>
+                    <span class="link-more">Explorar Proyecto &rarr;</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="experience-section">
+        <div class="section-header">
+            <span class="section-subtitle">TRAYECTORIA PROFESIONAL</span>
+            <h2 class="section-title">EXPERIENCIA LABORAL</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2021 — 2026</div>
+                <div class="timeline-content">
+                    <h3>Productos Jana</h3>
+                    <span class="role-title">Diseñadora Gráfica & Diagramadora</span>
+                    <p>Diagramación, diseño y arte finalización de piezas gráficas para uso corporativo. Gestión estratégica de canales visuales en redes sociales y catálogos de producto.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2021 — 2023</div>
+                <div class="timeline-content">
+                    <h3>Universidad del Valle — Escuela de Ciencias del Lenguaje</h3>
+                    <span class="role-title">Diseñadora de Identidad & Eventos Internacionales</span>
+                    <p>Desarrollo de la identidad visual de programas de posgrado, manuales de marca, diseño de piezas trilingües (ES, EN, FR) para el III Simposio Internacional de Contactos Interlingüísticos y producción editorial.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3>Fundación BiblioTEC</h3>
+                    <span class="role-title">Diseñadora Gráfica & Gestora Web</span>
+                    <p>Diseño corporativo y adaptación gráfica para proyectos de lectura y tecnología. Administración de contenidos institucionales.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2021 — 2022</div>
+                <div class="timeline-content">
+                    <h3>Psicológicamente</h3>
+                    <span class="role-title">Diseñadora UX/UI & Consultora de Interfaz</span>
+                    <p>Arquitectura de información, prototipado UI/UX e implementación completa de sitio web institucional.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2019 — 2020</div>
+                <div class="timeline-content">
+                    <h3>Grupo de Investigación Camaleón (Univalle)</h3>
+                    <span class="role-title">Monitora de Investigación / Diseñadora de Interfaces</span>
+                    <p>Proyecto CI21027: Interfaz Tangible para promover educación inclusiva entre usuarios videntes y no videntes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="education-section">
+        <div class="section-header">
+            <span class="section-subtitle">PREPARACIÓN & CERTIFICACIONES</span>
+            <h2 class="section-title">FORMACIÓN ACADÉMICA</h2>
+        </div>
+
+        <div class="edu-grid">
+            <div class="edu-card">
+                <span class="edu-year">2021</span>
+                <h3>Licenciatura en Diseño Gráfico</h3>
+                <p>Universidad del Valle — Sede Meléndez, Cali</p>
+            </div>
+
+            <div class="edu-card">
+                <span class="edu-year">2022</span>
+                <h3>Diplomado en Marketing & Business Digital</h3>
+                <p>Universidad Santiago de Cali</p>
+            </div>
+
+            <div class="edu-card">
+                <span class="edu-year">2025</span>
+                <h3>Especialización WhatsApp Business</h3>
+                <p>Biblioteca del Deporte y la Recreación</p>
+            </div>
+
+            <div class="edu-card">
+                <span class="edu-year">2023 — 2024</span>
+                <h3>Inglés Niveles I y II (English for Adults)</h3>
+                <p>Centro de Lenguas y Culturas, Univalle</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-card">
+            <h2>¿HABLAMOS DE TU PRÓXIMO PROYECTO?</h2>
+            <p>Disponible para proyectos de branding, editorial, diseño web e interfaces accesibles.</p>
+            
+            <div class="contact-info-grid">
+                <div>
+                    <strong>REFERENCIA CORPORATIVA</strong>
+                    <p>Javier Mauricio Reyes<br>Productos Jana — Santiago de Cali<br>Tel: 314 207 3939</p>
+                </div>
+                <div>
+                    <strong>REFERENCIA BANCARIA / PROFESIONAL</strong>
+                    <p>Viviana Julieth Buitrago<br>Banco Santander — Santiago de Cali<br>Tel: 315 772 9170</p>
+                </div>
+            </div>
+
+            <a href="mailto:productosjana.sa@gmail.com" class="btn-primary large">ENVIAR CORREO ELECTRÓNICO</a>
+        </div>
+    </section>
+
+    <!-- Modal Popup Structure -->
+    <div class="modal-overlay" id="projectModal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeModal(null)">&times;</button>
+            <div id="modalBody">
+                <!-- Dynamic Content Loaded by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
